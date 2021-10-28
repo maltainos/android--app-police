@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddingfield">10dp</dimen>
+    <dimen name="marginfield">10dp</dimen>
+    <dimen name="heigthfield">40dp</dimen>
+    <dimen name="marginbottom">40dp</dimen>
+    <dimen name="textSize">20sp</dimen>
+    <dimen name="sizeTitle">24sp</dimen>
+</resources>

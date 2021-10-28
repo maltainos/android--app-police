@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="24dp"
+            android:text="Police Manager"
+            android:paddingLeft="@dimen/paddingfield"/>
+        <TextView
+            android:layout_below="@+id/headerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="16dp"
+            android:text="Rodavias mais seguras"
+            android:paddingLeft="@dimen/paddingfield"/>
+        <ImageView
+            android:tint="@color/white"
+            android:src="@drawable/police"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="@dimen/paddingfield"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

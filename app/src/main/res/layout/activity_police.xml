@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PoliceActivity">
+
+    <!-- Begin Top Design -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/top"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <EditText
+                android:hint="Search police..."
+                android:background="@color/white"
+                android:paddingTop="@dimen/paddingfield"
+                android:paddingBottom="@dimen/paddingfield"
+                android:paddingRight="50dp"
+                android:paddingLeft="50dp"
+                android:textColor="@color/black"
+                android:layout_margin="@dimen/marginfield"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"/>
+            <ImageView
+                android:src="@drawable/search_64px"
+                android:tint="@color/black"
+                android:layout_margin="20dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"/>
+            <ImageView
+                android:src="@drawable/menu_vertical_64px"
+                android:tint="@color/black"
+                android:layout_margin="20dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"/>
+
+            <LinearLayout
+                android:layout_marginTop="70dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <Button
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="Transitos"
+                    android:textSize="14sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAlignment="center"/>
+                <Button
+                    android:id="@+id/emitir_multa"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="Adicionar"
+                    android:layout_width="0dp"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerMultas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <!-- /End Top Design -->
+</RelativeLayout>

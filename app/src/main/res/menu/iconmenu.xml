@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/group_login">
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:iconTint="@color/black"
+            android:title="Dashborad" />
+
+        <item
+            android:id="@+id/menu_police"
+            android:icon="@drawable/police"
+            android:title="Transitos" />
+
+        <item
+            android:id="@+id/menu_veiculos"
+            android:icon="@drawable/car_128px"
+            android:title="Veiculos" />
+
+        <item
+            android:id="@+id/menu_multas"
+            android:icon="@drawable/multa"
+            android:iconTint="@color/white"
+            android:title="Multas" />
+
+        <item
+            android:id="@+id/menu_driver"
+            android:icon="@drawable/driver"
+            android:title="Motorista" />
+    </group>
+
+    <group
+        android:id="@+id/group_config"
+        android:title="Setting And Terms">
+
+        <item
+            android:id="@+id/menu_setting"
+            android:icon="@drawable/ic_baseline_settings_24"
+            android:iconTint="@color/black"
+            android:title="Setting" />
+
+        <item
+            android:id="@+id/menu_terms"
+            android:icon="@drawable/ic_baseline_account_circle_24"
+            android:iconTint="@color/black"
+            android:title="Privacidade" />
+    </group>
+
+    <group
+        android:id="@+id/group_account"
+        android:title="Usuario">
+
+        <item
+            android:id="@+id/menu_account"
+            android:icon="@drawable/ic_baseline_account_circle_24"
+            android:iconTint="@color/black"
+            android:title="Minha Conta" />
+
+        <item
+            android:iconTint="@color/white"
+            android:id="@+id/menu_logout"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="Log Out" />
+    </group>
+</menu>
